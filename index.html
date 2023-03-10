@@ -20,18 +20,8 @@
             timer.innerText = date.getHours() + " : " + 
             date.getMinutes() + " : " + date.getSeconds();
         }, 1000);
-
         
-        //window
-        //setInterval메서드 : 설정된 시간간격을 반복함.
-
-        let now = new Date();
-        now.setDate(now.getDate() - 50);
-        console.log(now.toLocaleString());
-        let today = new Date();
-        let someday = new Date(2002, 1, 27);
-        console.log(Math.round((today.getTime()-someday.getTime())/(365*24*60*60*1000)) + "년");
-
+        
     </script>
     
 </body>
