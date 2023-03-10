@@ -7,60 +7,15 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>오늘 날짜</h1>
+    <div id="today"></div>
+
     <script>
-        // //사용자 정의 객체
-        // let book = {
-        //     title:"javascript 기본",
-        //     author:"홍길동",
-        //     pages: 500,
-        //     price: 15000,
-        //     open : function(page){
-        //         alert(`${this.title}책의 ${page}쪽 오픈`);
-        //     },
-        //     move : (x, y) => {
-        //         alert(`x:${x}, y:${y}로 이동`)
-        //     }
-        // };
-
-        // console.log(book.author);
-
-        // console.log(typeof book);
-        
-        // //내장객체
-        // console.dir(Number.EPSTLON);
-
-        // //DOM 객체
-        // console.dir(Document);
-
-        // //브라우저 객체
-        // console.dir(Location);
-        // // location.href = "http://www.naver.com"; 로케이션을 네이버로 바꾸겠다.
-
-       /* console.dir(window.__proto__.__proto__.__proto__.__proto__);
-
-       let myWindow = {};
-       myWindow.__proto__ = window;
-       console.dir(myWindow);
-       myWindow.test = function(){
-       document.write("Hello world");
-              };
-
-       myWindow.test(); */
-
-       // 객체는 추상적
-       // 인스턴스는 구체적 
-       // 사람이라는 객체를 만든다면 구체화
-
-      var date = new Date();
-       console.log(date.getFullYear());
-       console.dir(date);
-       console.log(new Date())
-       console.dir(Math);
-       console.log(Math.random()* 100 +1); 
-       // 0 <= m.r < 1
-       // 0 <= m.r * 10 < 10
-       // 1 <= m.r * 10 + 1 < 11
+      
+      let date = new Date();
+      document.getElementById("today").innerHTML = date
 
     </script>
+  
 </body>
 </html>
